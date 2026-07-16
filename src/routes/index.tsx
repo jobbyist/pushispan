@@ -578,26 +578,30 @@ function Testimonials() {
 function Faq() {
   const items = [
     {
-      q: "How does AI Apply work?",
       q: "Why is there a daily application limit?",
       a: "To protect your career reputation. Flooding job boards with hundreds of unchecked generic applications gets your profile flagged by recruiter ATS filters. By capping tiers to high-quality, targeted daily batches, we ensure every application remains highly optimized and conversion rates stay high.",
+    },
     {
-      q: "Does push i-span guarantee employment?",
       q: "What does 'Human-Reviewed, AI-Assisted' mean?",
       a: "It means you get the speed of AI combined with the safety of human oversight. The system handles 95% of the heavy lifting—reading descriptions, structuring data, and writing cover letters—but gives you clear verification touchpoints before submission to ensure complete accuracy.",
+    },
     {
-      q: "How does the free trial work?",
       q: "How does the WhatsApp notification system work?",
       a: "Subscribers on our Professional and Elite tiers get direct, real-time alerts sent straight to their WhatsApp numbers whenever an application status changes or an interview follow-up date approaches, saving you from constantly checking your email inbox.",
     },
     {
-      a: "You get 3 days free with 10 AI applications per day. No credit card required. Upgrade any time to unlock unlimited applications.",
+      q: "How does the free trial work?",
       a: "You get 3 days free with 10 AI applications per day. No credit card required. Upgrade any time to unlock higher daily application limits.",
-    { q: "Can I cancel anytime?", a: "Yes. Subscriptions are month-to-month and can be cancelled from your dashboard at any time." },
+    },
+    {
+      q: "Can I cancel anytime?",
+      a: "Yes. Subscriptions are month-to-month and can be cancelled from your dashboard at any time."
+    },
+    {
       q: "Is my information secure?",
       a: "Your data lives in encrypted, POPIA-aligned infrastructure. We never sell your data and you control what's shared with employers.",
     },
-    {
+  ];
   return (
     <section id="faq" className="mx-auto max-w-3xl px-4 py-24">
       <SectionHeader
