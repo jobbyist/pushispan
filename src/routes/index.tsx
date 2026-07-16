@@ -431,11 +431,6 @@ function Pricing() {
         "LinkedIn Profile Optimizer",
       ],
     },
-    {
-      name: "Elite",
-      price: "R349",
-      period: "/month",
-      cta: "Go Elite",
       features: [
         "Everything in Professional",
         "High-Volume Automation Queue (Up to 1,000/mo)",
@@ -443,7 +438,6 @@ function Pricing() {
         "1:1 Human Career Strategy Session",
         "Dedicated Proxy Pipeline",
       ],
-    },
   ];
   return (
     <section id="pricing" className="mx-auto max-w-6xl px-4 py-24">
