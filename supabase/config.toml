@@ -1,1 +1,30 @@
 project_id = "crayzscpcplkhrkzpbgk"
+[auth]
+enabled = true
+site_url = "http://localhost:5173"
+
+# LinkedIn OAuth Configuration
+# To enable LinkedIn Sign In:
+# 1. Go to https://www.linkedin.com/developers/apps
+# 2. Create a new app
+# 3. Add OAuth 2.0 redirect URLs: https://<your-project-ref>.supabase.co/auth/v1/callback
+# 4. Get your Client ID and Client Secret
+# 5. Add them to your Supabase dashboard under Authentication > Providers > LinkedIn
+
+[auth.external.linkedin_oidc]
+enabled = true
+client_id = "env(LINKEDIN_CLIENT_ID)"
+client_secret = "env(LINKEDIN_CLIENT_SECRET)"
+redirect_uri = "https://crayzscpcplkhrkzpbgk.supabase.co/auth/v1/callback"
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+
+[auth.sessions]
+timebox = 86400 # 24 hours
+inactivity_timeout = 3600 # 1 hour
+
+[auth.rate_limits]
+email_sent = 4
+signup = 10
