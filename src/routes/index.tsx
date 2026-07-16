@@ -430,6 +430,11 @@ function Pricing() {
         "AI Interview Prep Suite",
         "LinkedIn Profile Optimizer",
       ],
+    {
+      name: "Elite",
+      price: "R349",
+      period: "/month",
+      cta: "Go Elite",
     },
       features: [
         "Everything in Professional",
