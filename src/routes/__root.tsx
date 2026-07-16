@@ -83,23 +83,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "push i-span" },
       { property: "og:site_name", content: "push i-span" },
-      { property: "og:title", content: "push i-span — AI Job Hunting Assistant" },
+      { property: "og:title", content: "push i-span — South Africa's AI Job Hunting Assistant" },
       {
         property: "og:description",
         content:
-          "Let AI apply while you focus on getting hired. Built for South African job seekers.",
+          "Push i-span uses AI to build your CV, write cover letters, apply to jobs and prep you for interviews. More applications, better opportunities, less effort.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "push i-span" },
+      { name: "twitter:title", content: "push i-span — South Africa's AI Job Hunting Assistant" },
       {
         name: "twitter:description",
-        content: "South Africa's AI job hunting assistant.",
+        content: "Push i-span uses AI to build your CV, write cover letters, apply to jobs and prep you for interviews. More applications, better opportunities, less effort.",
       },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2f179c8e-e45e-4ae2-b132-2f9942c98d23" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2f179c8e-e45e-4ae2-b132-2f9942c98d23" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
