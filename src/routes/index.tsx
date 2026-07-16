@@ -182,13 +182,12 @@ function Hero() {
         <h1 className="font-display mx-auto max-w-4xl text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
           Push i-span.
           <br />
-          Let AI apply while you{" "}
-          <span className="gradient-text">focus on getting hired.</span>
+          Let AI apply while you <span className="gradient-text">focus on getting hired.</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-          AI handles the heavy lifting—drafting, tailoring, formatting—while you 
-          retain full control. Beat modern recruiter ATS filters with intelligent 
-          automation that never compromises your professional reputation.
+          AI handles the heavy lifting—drafting, tailoring, formatting—while you retain full
+          control. Beat modern recruiter ATS filters with intelligent automation that never
+          compromises your professional reputation.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Button
@@ -200,9 +199,7 @@ function Hero() {
           </Button>
           <VideoModal />
         </div>
-        <p className="mt-3 text-xs text-muted-foreground">
-          3 days free · No credit card required
-        </p>
+        <p className="mt-3 text-xs text-muted-foreground">3 days free · No credit card required</p>
 
         <FloatingCards />
       </div>
@@ -243,11 +240,36 @@ function VideoModal() {
 
 function FloatingCards() {
   const items = [
-    { icon: FileText, label: "CV Builder", tint: "from-[color:var(--brand-blue)] to-[color:var(--brand-cyan)]", delay: "0s" },
-    { icon: Send, label: "Auto Apply", tint: "from-[color:var(--brand-orange)] to-[color:var(--brand-pink)]", delay: ".6s" },
-    { icon: MessageSquare, label: "AI Cover Letter", tint: "from-[color:var(--brand-pink)] to-[color:var(--brand-blue)]", delay: "1.2s" },
-    { icon: Video, label: "Interview Prep", tint: "from-[color:var(--brand-emerald)] to-[color:var(--brand-blue)]", delay: "1.8s" },
-    { icon: GraduationCap, label: "Career Coach", tint: "from-[color:var(--brand-blue)] to-[color:var(--brand-pink)]", delay: "2.4s" },
+    {
+      icon: FileText,
+      label: "CV Builder",
+      tint: "from-[color:var(--brand-blue)] to-[color:var(--brand-cyan)]",
+      delay: "0s",
+    },
+    {
+      icon: Send,
+      label: "Auto Apply",
+      tint: "from-[color:var(--brand-orange)] to-[color:var(--brand-pink)]",
+      delay: ".6s",
+    },
+    {
+      icon: MessageSquare,
+      label: "AI Cover Letter",
+      tint: "from-[color:var(--brand-pink)] to-[color:var(--brand-blue)]",
+      delay: "1.2s",
+    },
+    {
+      icon: Video,
+      label: "Interview Prep",
+      tint: "from-[color:var(--brand-emerald)] to-[color:var(--brand-blue)]",
+      delay: "1.8s",
+    },
+    {
+      icon: GraduationCap,
+      label: "Career Coach",
+      tint: "from-[color:var(--brand-blue)] to-[color:var(--brand-pink)]",
+      delay: "2.4s",
+    },
   ];
   return (
     <div className="mt-16 grid grid-cols-2 gap-3 sm:mt-20 sm:grid-cols-3 md:grid-cols-5">
@@ -324,12 +346,19 @@ function HowItWorks() {
     <section className="mx-auto max-w-6xl px-4 py-24">
       <SectionHeader
         eyebrow="How it works"
-        title={<>Three steps to <span className="gradient-text">smart, human-verified applications</span></>}
+        title={
+          <>
+            Three steps to <span className="gradient-text">smart, human-verified applications</span>
+          </>
+        }
         subtitle="From blank page to inbox full of interview invites."
       />
       <div className="mt-12 grid gap-4 md:grid-cols-3">
         {steps.map((s) => (
-          <div key={s.n} className="glass rounded-3xl p-6 transition-transform hover:-translate-y-1">
+          <div
+            key={s.n}
+            className="glass rounded-3xl p-6 transition-transform hover:-translate-y-1"
+          >
             <div className="flex items-center justify-between">
               <span className="font-display text-3xl font-bold text-muted-foreground/50">
                 {s.n}
@@ -350,24 +379,72 @@ function HowItWorks() {
 /* ---------- Features ---------- */
 function Features() {
   const features = [
-    { icon: Send, title: "AI Job Applications", body: "AI drafts personalized applications—you review and approve before submission." },
-    { icon: FileText, title: "ATS-Friendly Resume Builder", body: "Professional CVs optimized for recruiter tracking systems." },
-    { icon: MessageSquare, title: "AI Cover Letters", body: "AI writes unique cover letters—you verify accuracy before sending." },
-    { icon: Linkedin, title: "LinkedIn Optimiser", body: "AI-powered profile optimization with human oversight." },
-    { icon: GraduationCap, title: "Career Learning", body: "Pathways to accredited South African courses." },
-    { icon: Trophy, title: "Sprint 90", body: "Jobbyist 90-Day Job Search Sprint toolkit worth R349." },
-    { icon: Video, title: "Monthly Webinars", body: "Live coaching from experienced career strategists." },
-    { icon: Sparkles, title: "Human Career Strategy Session", body: "1:1 expert guidance to plan your search strategy." },
-    { icon: Phone, title: "WhatsApp Notifications", body: "Real-time application status alerts sent to your phone." },
+    {
+      icon: Send,
+      title: "AI Job Applications",
+      body: "AI drafts personalized applications—you review and approve before submission.",
+    },
+    {
+      icon: FileText,
+      title: "ATS-Friendly Resume Builder",
+      body: "Professional CVs optimized for recruiter tracking systems.",
+    },
+    {
+      icon: MessageSquare,
+      title: "AI Cover Letters",
+      body: "AI writes unique cover letters—you verify accuracy before sending.",
+    },
+    {
+      icon: Linkedin,
+      title: "LinkedIn Optimiser",
+      body: "AI-powered profile optimization with human oversight.",
+    },
+    {
+      icon: GraduationCap,
+      title: "Career Learning",
+      body: "Pathways to accredited South African courses.",
+    },
+    {
+      icon: Trophy,
+      title: "Sprint 90",
+      body: "Jobbyist 90-Day Job Search Sprint toolkit worth R349.",
+    },
+    {
+      icon: Video,
+      title: "Monthly Webinars",
+      body: "Live coaching from experienced career strategists.",
+    },
+    {
+      icon: Sparkles,
+      title: "Human Career Strategy Session",
+      body: "1:1 expert guidance to plan your search strategy.",
+    },
+    {
+      icon: Phone,
+      title: "WhatsApp Notifications",
+      body: "Real-time application status alerts sent to your phone.",
+    },
     { icon: Mail, title: "Email Support", body: "Priority email replies from our team." },
-    { icon: Headphones, title: "AI Interview Prep Suite", body: "AI-powered mock interviews with human-verified feedback." },
-    { icon: Shield, title: "Application Tracker", body: "See every application, status and next step in one view." },
+    {
+      icon: Headphones,
+      title: "AI Interview Prep Suite",
+      body: "AI-powered mock interviews with human-verified feedback.",
+    },
+    {
+      icon: Shield,
+      title: "Application Tracker",
+      body: "See every application, status and next step in one view.",
+    },
   ];
   return (
     <section id="features" className="mx-auto max-w-6xl px-4 py-24">
       <SectionHeader
         eyebrow="Features"
-        title={<>Everything you need to <span className="gradient-text">get hired faster, safely</span></>}
+        title={
+          <>
+            Everything you need to <span className="gradient-text">get hired faster, safely</span>
+          </>
+        }
         subtitle="An AI-native workspace for the modern South African job seeker."
       />
       <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -450,7 +527,11 @@ function Pricing() {
     <section id="pricing" className="mx-auto max-w-6xl px-4 py-24">
       <SectionHeader
         eyebrow="Pricing"
-        title={<>Plans that <span className="gradient-text">pay for themselves</span></>}
+        title={
+          <>
+            Plans that <span className="gradient-text">pay for themselves</span>
+          </>
+        }
         subtitle="Cancel anytime. Every plan includes core AI application tools."
       />
       <div className="mt-12 grid gap-4 lg:grid-cols-4">
@@ -545,7 +626,11 @@ function Testimonials() {
     <section className="mx-auto max-w-6xl px-4 py-24">
       <SectionHeader
         eyebrow="Testimonials"
-        title={<>South Africans getting <span className="gradient-text">hired faster</span></>}
+        title={
+          <>
+            South Africans getting <span className="gradient-text">hired faster</span>
+          </>
+        }
         subtitle="Real users. Real interview invites."
       />
       <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -608,21 +693,17 @@ function Faq() {
     <section id="faq" className="mx-auto max-w-3xl px-4 py-24">
       <SectionHeader
         eyebrow="FAQ"
-        title={<>Frequently asked <span className="gradient-text">questions</span></>}
+        title={
+          <>
+            Frequently asked <span className="gradient-text">questions</span>
+          </>
+        }
       />
       <Accordion type="single" collapsible className="mt-10 space-y-2">
         {items.map((it, i) => (
-          <AccordionItem
-            key={i}
-            value={`i-${i}`}
-            className="glass rounded-2xl border-white/5 px-5"
-          >
-            <AccordionTrigger className="text-left text-base font-medium">
-              {it.q}
-            </AccordionTrigger>
-            <AccordionContent className="text-sm text-muted-foreground">
-              {it.a}
-            </AccordionContent>
+          <AccordionItem key={i} value={`i-${i}`} className="glass rounded-2xl border-white/5 px-5">
+            <AccordionTrigger className="text-left text-base font-medium">{it.q}</AccordionTrigger>
+            <AccordionContent className="text-sm text-muted-foreground">{it.a}</AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>
@@ -656,13 +737,25 @@ function Podcast() {
     <section id="podcast" className="mx-auto max-w-6xl px-4 py-24">
       <SectionHeader
         eyebrow="Podcast"
-        title={<>The Hustle <span className="gradient-text">Diaries SA</span></>}
+        title={
+          <>
+            The Hustle <span className="gradient-text">Diaries SA</span>
+          </>
+        }
         subtitle="Stories from South Africans navigating careers, entrepreneurship and opportunity."
       />
       <div className="mt-12 grid gap-4 md:grid-cols-3">
         {eps.map((e) => (
-          <div key={e.n} className="glass group overflow-hidden rounded-3xl transition-transform hover:-translate-y-1">
-            <div className={cn("relative flex aspect-[16/10] items-center justify-center bg-gradient-to-br", e.tint)}>
+          <div
+            key={e.n}
+            className="glass group overflow-hidden rounded-3xl transition-transform hover:-translate-y-1"
+          >
+            <div
+              className={cn(
+                "relative flex aspect-[16/10] items-center justify-center bg-gradient-to-br",
+                e.tint,
+              )}
+            >
               <button className="glass-strong flex h-14 w-14 items-center justify-center rounded-full text-white transition-transform group-hover:scale-110">
                 <Play className="h-5 w-5 fill-current" />
               </button>
@@ -686,10 +779,30 @@ function Podcast() {
 /* ---------- Community ---------- */
 function Community() {
   const socials = [
-    { name: "WhatsApp Channel", href: "https://whatsapp.com/channel/0029Vb8e2mV11ulHZj474B1X", icon: Phone, tint: "from-emerald-400 to-emerald-600" },
-    { name: "Facebook", href: "https://facebook.com/pushispan.co.za", icon: Facebook, tint: "from-blue-500 to-blue-700" },
-    { name: "Substack", href: "https://pushispan.substack.com", icon: BookOpen, tint: "from-orange-400 to-pink-500" },
-    { name: "LinkedIn", href: "https://linkedin.com/company/pushispan", icon: Linkedin, tint: "from-sky-500 to-blue-700" },
+    {
+      name: "WhatsApp Channel",
+      href: "https://whatsapp.com/channel/0029Vb8e2mV11ulHZj474B1X",
+      icon: Phone,
+      tint: "from-emerald-400 to-emerald-600",
+    },
+    {
+      name: "Facebook",
+      href: "https://facebook.com/pushispan.co.za",
+      icon: Facebook,
+      tint: "from-blue-500 to-blue-700",
+    },
+    {
+      name: "Substack",
+      href: "https://pushispan.substack.com",
+      icon: BookOpen,
+      tint: "from-orange-400 to-pink-500",
+    },
+    {
+      name: "LinkedIn",
+      href: "https://linkedin.com/company/pushispan",
+      icon: Linkedin,
+      tint: "from-sky-500 to-blue-700",
+    },
   ];
   return (
     <section className="mx-auto max-w-6xl px-4 py-24">
@@ -709,7 +822,12 @@ function Community() {
               rel="noreferrer"
               className="glass group flex flex-col items-center gap-3 rounded-2xl p-5 transition-transform hover:-translate-y-1"
             >
-              <div className={cn("flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br text-white", s.tint)}>
+              <div
+                className={cn(
+                  "flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br text-white",
+                  s.tint,
+                )}
+              >
                 <s.icon className="h-6 w-6" />
               </div>
               <div className="text-sm font-medium">{s.name}</div>
@@ -729,8 +847,8 @@ function Footer() {
         <div className="md:col-span-2">
           <img src={logoAsset.url} alt="push i-span" className="h-10 w-auto" />
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            More applications. Better opportunities. Less effort. South Africa's
-            Human-Reviewed, AI-Assisted job hunting platform.
+            More applications. Better opportunities. Less effort. South Africa's Human-Reviewed,
+            AI-Assisted job hunting platform.
           </p>
         </div>
         <FooterCol
@@ -797,12 +915,8 @@ function SectionHeader({
       <div className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
         {eyebrow}
       </div>
-      <h2 className="font-display mt-3 text-3xl font-bold leading-tight md:text-5xl">
-        {title}
-      </h2>
-      {subtitle && (
-        <p className="mt-3 text-base text-muted-foreground md:text-lg">{subtitle}</p>
-      )}
+      <h2 className="font-display mt-3 text-3xl font-bold leading-tight md:text-5xl">{title}</h2>
+      {subtitle && <p className="mt-3 text-base text-muted-foreground md:text-lg">{subtitle}</p>}
     </div>
   );
 }

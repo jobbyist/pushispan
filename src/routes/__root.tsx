@@ -8,6 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -94,10 +95,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:title", content: "push i-span — South Africa's AI Job Hunting Assistant" },
       {
         name: "twitter:description",
-        content: "Push i-span uses AI to build your CV, write cover letters, apply to jobs and prep you for interviews. More applications, better opportunities, less effort.",
+        content:
+          "Push i-span uses AI to build your CV, write cover letters, apply to jobs and prep you for interviews. More applications, better opportunities, less effort.",
       },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2f179c8e-e45e-4ae2-b132-2f9942c98d23" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2f179c8e-e45e-4ae2-b132-2f9942c98d23" },
+      {
+        property: "og:image",
+        content:
+          "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2f179c8e-e45e-4ae2-b132-2f9942c98d23",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/2f179c8e-e45e-4ae2-b132-2f9942c98d23",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -123,6 +133,7 @@ function RootShell({ children }: { children: ReactNode }) {
       </head>
       <body>
         {children}
+        <Analytics />
         <Scripts />
       </body>
     </html>
