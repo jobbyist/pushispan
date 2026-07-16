@@ -590,7 +590,7 @@ function Faq() {
     },
     {
       q: "Can I cancel anytime?",
-      a: "Yes. Subscriptions are month-to-month and can be cancelled from your dashboard at any time."
+    },
     },
     {
       q: "Is my information secure?",
