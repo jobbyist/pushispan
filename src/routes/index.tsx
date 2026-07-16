@@ -442,6 +442,7 @@ function Pricing() {
         "Premium Document Templates",
         "1:1 Human Career Strategy Session",
         "Dedicated Proxy Pipeline",
+      ],
     },
   ];
   return (
