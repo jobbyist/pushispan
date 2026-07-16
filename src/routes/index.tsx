@@ -64,7 +64,7 @@ export const Route = createFileRoute("/")({
           offers: { "@type": "Offer", price: "99", priceCurrency: "ZAR" },
           description:
             "South Africa's AI job hunting assistant. Build CVs, generate cover letters and auto-apply to jobs.",
-        }),
+            "South Africa's Human-Reviewed, AI-Assisted job hunting platform. Build CVs, generate cover letters and auto-apply to jobs with human oversight.",
       },
     ],
   }),
@@ -178,7 +178,7 @@ function Hero() {
         >
           <Sparkles className="mr-1.5 h-3.5 w-3.5 text-[color:var(--brand-pink)]" />
           South Africa's AI Job Hunting Assistant
-        </Badge>
+          Human-Reviewed, AI-Assisted Job Applications
         <h1 className="font-display mx-auto max-w-4xl text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
           Push i-span.
           <br />
@@ -188,9 +188,9 @@ function Hero() {
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
           Build your CV. Generate custom cover letters. Apply to jobs
           automatically. Learn new skills. Track your progress — all in one
-          premium AI workspace.
-        </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          AI handles the heavy lifting—drafting, tailoring, formatting—while you retain full control.
+          Beat modern recruiter ATS filters with intelligent applications that keep humans in the loop.
+          Build CVs, generate cover letters, and apply smarter—not blindly.
           <Button
             size="lg"
             className="rounded-full gradient-brand px-6 text-base text-white shadow-xl hover:opacity-95"
@@ -316,7 +316,7 @@ function HowItWorks() {
     {
       n: "03",
       title: "AI starts applying",
-      body: "Tailored CVs, custom cover letters, application answers and live tracking.",
+      body: "AI drafts tailored CVs and cover letters. You review and approve before submission. Full control, zero spam.",
       icon: Rocket,
     },
   ];
@@ -325,7 +325,7 @@ function HowItWorks() {
       <SectionHeader
         eyebrow="How it works"
         title={<>Three steps to <span className="gradient-text">applying at scale</span></>}
-        subtitle="From blank page to inbox full of interview invites."
+        subtitle="From blank page to inbox full of interview invites—with human oversight at every step."
       />
       <div className="mt-12 grid gap-4 md:grid-cols-3">
         {steps.map((s) => (
@@ -352,9 +352,9 @@ function Features() {
   const features = [
     { icon: Send, title: "AI Job Applications", body: "Personalized applications generated using Gemini." },
     { icon: FileText, title: "Resume Builder", body: "Professional ATS-friendly CVs, ready in minutes." },
-    { icon: MessageSquare, title: "AI Cover Letters", body: "A unique cover letter for every single application." },
+    { icon: Send, title: "Human-in-the-Loop AI Applications", body: "AI drafts. You verify. Every application optimized, never spammy." },
     { icon: Linkedin, title: "LinkedIn Optimiser", body: "Boost your professional profile's visibility." },
-    { icon: GraduationCap, title: "Career Learning", body: "Pathways to accredited South African courses." },
+    { icon: MessageSquare, title: "AI-Drafted Cover Letters", body: "AI generates unique cover letters. You approve before sending." },
     { icon: Trophy, title: "Sprint 90", body: "Jobbyist 90-Day Job Search Sprint toolkit worth R349." },
     { icon: Video, title: "Monthly Webinars", body: "Live coaching from experienced career strategists." },
     { icon: Sparkles, title: "Career Strategy Session", body: "15-minute onboarding call to plan your search." },
@@ -369,7 +369,7 @@ function Features() {
         eyebrow="Features"
         title={<>Everything you need to <span className="gradient-text">get hired faster</span></>}
         subtitle="An AI-native workspace for the modern South African job seeker."
-      />
+        subtitle="AI does 95% of the work. You keep 100% of the control."
       <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {features.map((f) => (
           <div
@@ -413,11 +413,11 @@ function Pricing() {
         "30 applications/day",
         "Priority support",
         "Unlimited resumes",
-        "Unlimited cover letters",
-        "Learning pathways",
-      ],
-    },
-    {
+        "5 AI applications per day (Up to 150/mo)",
+        "Core AI Workspace",
+        "ATS-Friendly CV Builder",
+        "Email Status Tracking",
+        "Standard Email Support",
       name: "Professional",
       price: "R199",
       period: "/month",
@@ -427,14 +427,11 @@ function Pricing() {
         "Unlimited applications",
         "Priority AI",
         "LinkedIn optimisation",
-        "Monthly webinar",
-        "Sprint 90 program",
-        "Career strategy session",
-        "Interview preparation",
-        "Priority WhatsApp",
-      ],
-    },
-    {
+        "15 AI applications per day (Up to 450/mo)",
+        "Priority AI Engine",
+        "Direct WhatsApp Notifications",
+        "AI Interview Prep Suite",
+        "LinkedIn Profile Optimizer",
       name: "Elite",
       price: "R349",
       period: "/month",
@@ -442,12 +439,10 @@ function Pricing() {
       features: [
         "Everything in Professional",
         "Priority automation queue",
-        "Future browser automation",
-        "Exclusive webinars",
-        "Premium templates",
-        "1:1 career coaching",
-      ],
-    },
+        "High-Volume Automation Queue (Up to 1,000/mo)",
+        "Premium Document Templates",
+        "1:1 Human Career Strategy Session",
+        "Dedicated Proxy Pipeline",
   ];
   return (
     <section id="pricing" className="mx-auto max-w-6xl px-4 py-24">
@@ -455,7 +450,7 @@ function Pricing() {
         eyebrow="Pricing"
         title={<>Plans that <span className="gradient-text">pay for themselves</span></>}
         subtitle="Cancel anytime. Every plan includes core AI application tools."
-      />
+        subtitle="Cancel anytime. Every plan includes Human-Reviewed, AI-Assisted application tools."
       <div className="mt-12 grid gap-4 lg:grid-cols-4">
         {tiers.map((t) => (
           <div
@@ -585,27 +580,17 @@ function Faq() {
     {
       q: "How does AI Apply work?",
       a: "You upload your CV and set preferences. Our AI matches you to roles across major South African job boards, tailors your CV and cover letter for each one, and submits the application on your behalf.",
-    },
-    {
+      q: "Why is there a daily application limit?",
+      a: "To protect your career reputation. Flooding job boards with hundreds of unchecked generic applications gets your profile flagged by recruiter ATS filters. By capping tiers to high-quality, targeted daily batches, we ensure every application remains highly optimized and conversion rates stay high.",
       q: "Does push i-span guarantee employment?",
       a: "No platform can guarantee employment. What we guarantee is dramatically more applications, better positioning and faster feedback loops — which historically leads to more interviews.",
-    },
-    {
+      q: "What does 'Human-Reviewed, AI-Assisted' mean?",
+      a: "It means you get the speed of AI combined with the safety of human oversight. The system handles 95% of the heavy lifting—reading descriptions, structuring data, and writing cover letters—but gives you clear verification touchpoints before submission to ensure complete accuracy.",
       q: "How does the free trial work?",
       a: "You get 3 days free with 10 AI applications per day. No credit card required. Upgrade any time to unlock unlimited applications.",
-    },
-    { q: "Can I cancel anytime?", a: "Yes. Subscriptions are month-to-month and can be cancelled from your dashboard at any time." },
-    {
-      q: "Is my information secure?",
-      a: "Your data lives in encrypted, POPIA-aligned infrastructure. We never sell your data and you control what's shared with employers.",
-    },
-    {
-      q: "What AI models are used?",
-      a: "The free tier uses Gemini Free. Paid tiers support Gemini Pro, Claude, OpenAI and Amazon Nova as they become available.",
-    },
-    { q: "Can I use my own CV?", a: "Absolutely — upload any PDF or DOCX and we'll parse and enhance it, or build one from scratch inside the app." },
+      q: "How does the WhatsApp notification system work?",
+      a: "Subscribers on our Professional and Elite tiers get direct, real-time alerts sent straight to their WhatsApp numbers whenever an application status changes or an interview follow-up date approaches, saving you from constantly checking your email inbox.",
   ];
-  return (
     <section id="faq" className="mx-auto max-w-3xl px-4 py-24">
       <SectionHeader
         eyebrow="FAQ"
@@ -732,8 +717,8 @@ function Footer() {
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
             More applications. Better opportunities. Less effort. South Africa's
             AI job hunting assistant.
-          </p>
-        </div>
+            Human-Reviewed, AI-Assisted job applications. More opportunities. Better targeting.
+            Full control. South Africa's elite job hunting platform.
         <FooterCol
           title="Product"
           links={[
