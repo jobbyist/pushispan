@@ -40,7 +40,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
-import logoAsset from "@/assets/pushispan-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -135,7 +134,7 @@ function Nav() {
           <div className="flex items-center gap-2">
             <Button variant="ghost" className="hidden rounded-full sm:inline-flex">
               Sign in
-            </Button>
+            <img src="https://cdn.shopify.com/s/files/1/0779/5369/5849/files/IMG-0872.png" alt="push i-span" className="h-9 w-auto" />
             <Button className="rounded-full gradient-brand text-white shadow-lg hover:opacity-95">
               Start Free
             </Button>
@@ -162,7 +161,6 @@ function Nav() {
             ))}
           </div>
         )}
-      </div>
     </header>
   );
 }
@@ -753,7 +751,7 @@ function Footer() {
         />
       </div>
       <div className="border-t border-border">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-muted-foreground md:flex-row">
+          <img src="https://cdn.shopify.com/s/files/1/0779/5369/5849/files/IMG-0872.png" alt="push i-span" className="h-10 w-auto" />
           <div>© {new Date().getFullYear()} push i-span. All rights reserved.</div>
           <div className="flex items-center gap-1.5">
             <Zap className="h-3.5 w-3.5 text-[color:var(--brand-pink)]" />
