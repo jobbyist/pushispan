@@ -148,18 +148,39 @@
 /* Ambient background orbs */
 @utility bg-aurora {
   background:
-    radial-gradient(60rem 40rem at 10% -10%, color-mix(in oklab, var(--brand-blue) 25%, transparent), transparent 60%),
-    radial-gradient(50rem 35rem at 90% 10%, color-mix(in oklab, var(--brand-pink) 20%, transparent), transparent 60%),
-    radial-gradient(45rem 30rem at 50% 90%, color-mix(in oklab, var(--brand-emerald) 15%, transparent), transparent 60%),
+    radial-gradient(
+      60rem 40rem at 10% -10%,
+      color-mix(in oklab, var(--brand-blue) 25%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      50rem 35rem at 90% 10%,
+      color-mix(in oklab, var(--brand-pink) 20%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      45rem 30rem at 50% 90%,
+      color-mix(in oklab, var(--brand-emerald) 15%, transparent),
+      transparent 60%
+    ),
     var(--background);
 }
 
 @keyframes float-slow {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-14px) rotate(1deg); }
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(1deg);
+  }
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
